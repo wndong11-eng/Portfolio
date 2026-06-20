@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>溫浩東｜廣告顧問・策略・操作 — 跨平台廣告投放 × 數據分析</title>
+  <meta name="description" content="8年以上 廣告實戰經驗，長期代操電商品牌，操作規模橫跨百萬至千萬等級，累積創造電商廣告收益逾億元。提供廣告代操、健診顧問、Looker Studio 自動化報表等服務。" />
+  
+  <!-- OG Metadata -->
+  <meta property="og:title" content="溫浩東｜廣告顧問・策略・操作 — 跨平台廣告投放 × 數據分析" />
+  <meta property="og:description" content="8年以上 廣告實戰經驗，長期代操電商品牌，操作規模橫跨百萬至千萬等級，累積創造電商廣告收益逾億元。提供廣告代操、健診顧問等服務。" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              DEFAULT: '#C9A84C',
+              light:   '#E8C97A',
+              dark:    '#8B6914',
+              muted:   '#6B5420',
+            },
+            black: {
+              DEFAULT: '#0A0A0A',
+              soft:    '#111111',
+              card:    '#161616',
+              border:  '#222222',
+            },
+            gray: {
+              subtle: '#2A2A2A',
+              muted:  '#555555',
+              dim:    '#888888',
+              light:  '#BBBBBB',
+            }
+          },
+          fontFamily: {
+            sans: ['Noto Sans TC', 'Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom styles matching CODEX specifications -->
+  <style>
+    .section-title {
+      font-size: 1.875rem; /* 30px */
+      line-height: 2.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.025em;
+    }
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.5rem;
+      }
+    }
+    .section-subtitle {
+      color: #C9A84C;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
+    .gold-line {
+      width: 3rem;
+      height: 0.125rem;
+      background-color: #C9A84C;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .card-base {
+      background-color: #161616;
+      border: 1px solid #222222;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-base:hover {
+      border-color: rgba(201, 168, 76, 0.4);
+      transform: translateY(-4px);
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #C9A84C;
+      color: #0A0A0A;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      transition: background-color 0.2s;
+    }
+    .btn-primary:hover {
+      background-color: #E8C97A;
+    }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid #C9A84C;
+      color: #C9A84C;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      transition: background-color 0.2s;
+    }
+    .btn-outline:hover {
+      background-color: rgba(201, 168, 76, 0.1);
+    }
+    
+    /* Stats grid lines background pattern */
+    .grid-bg-pattern {
+      background-image: linear-gradient(rgba(201, 168, 76, 0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(201, 168, 76, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    /* Scroll reveal class animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Custom dark gold scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0A0A0A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4a3a10;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C9A84C;
+    }
+  </style>
+</head>
+<body class="bg-black text-gray-light font-sans antialiased overflow-x-hidden selection:bg-gold selection:text-black">
+
+  <!-- ==================== Header ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-black-border transition-all duration-300" id="header">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#hero" class="flex items-center gap-2 group">
+        <span class="text-2xl font-bold tracking-wider text-white group-hover:text-gold transition-colors duration-200">溫浩東</span>
+        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+        <span class="text-xs text-gray-dim tracking-widest font-medium uppercase">廣告顧問・策略・操作</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#stats" class="text-sm font-medium text-gray-light hover:text-gold transition-colors duration-200">核心戰績</a>
+        <a href="#cases" class="text-sm font-medium text-gray-light hover:text-gold transition-colors duration-200">過往案例</a>
+        <a href="#evidence" class="text-sm font-medium text-gray-light hover:text-gold transition-colors duration-200">數據佐證</a>
+        <a href="#career" class="text-sm font-medium text-gray-light hover:text-gold transition-colors duration-200">生涯歷程</a>
+        <a href="#platforms" class="text-sm font-medium text-gray-light hover:text-gold transition-colors duration-200">操作平台</a>
+        <a href="#services" class="text-sm font-medium text-gray-light hover:text-gold transition-colors duration-200">服務項目</a>
+        <a href="#contact" class="btn-primary py-2 px-4 text-xs">聯絡我</a>
+      </nav>
+
+      <!-- Hamburger Button -->
+      <button class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 z-50" id="menu-btn" aria-label="Toggle Menu">
+        <span class="w-6 h-0.5 bg-white transition-all duration-300 origin-center" id="hamburger-1"></span>
+        <span class="w-6 h-0.5 bg-white transition-all duration-300" id="hamburger-2"></span>
+        <span class="w-6 h-0.5 bg-white transition-all duration-300 origin-center" id="hamburger-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Menu -->
+  <div class="fixed inset-0 bg-black/95 backdrop-blur-lg z-40 flex flex-col justify-center items-center transition-all duration-500 opacity-0 pointer-events-none" id="mobile-menu">
+    <nav class="flex flex-col gap-6 text-center text-xl font-medium tracking-wide">
+      <a href="#stats" class="mobile-nav-link text-gray-light hover:text-gold transition-colors py-2">核心戰績</a>
+      <a href="#cases" class="mobile-nav-link text-gray-light hover:text-gold transition-colors py-2">過往案例</a>
+      <a href="#evidence" class="mobile-nav-link text-gray-light hover:text-gold transition-colors py-2">數據佐證</a>
+      <a href="#career" class="mobile-nav-link text-gray-light hover:text-gold transition-colors py-2">生涯歷程</a>
+      <a href="#platforms" class="mobile-nav-link text-gray-light hover:text-gold transition-colors py-2">操作平台</a>
+      <a href="#services" class="mobile-nav-link text-gray-light hover:text-gold transition-colors py-2">服務項目</a>
+      <a href="#contact" class="mobile-nav-link btn-primary text-base px-8 py-3 mt-4">聯絡我</a>
+    </nav>
+  </div>
+
+
+  <!-- ==================== Hero Section ==================== -->
+  <section id="hero" class="min-h-screen flex items-center relative overflow-hidden pt-20">
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-1/4 left-10 w-[300px] h-[300px] bg-[radial-gradient(circle_at_center,rgba(201,168,76,0.03)_0%,transparent_75%)] rounded-full blur-2xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12">
+      <div class="max-w-3xl">
+        <span class="text-gold text-xs sm:text-sm font-bold uppercase tracking-widest block mb-4 animate-pulse">PERFORMANCE MARKETING EXPERT</span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-tight mb-6">
+          讓每一分預算<br />
+          都產生可量化的回報
+        </h1>
+        <p class="text-gray-light text-base sm:text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
+          跨平台廣告代操 × 數據驅動優化 × 自動化報表建置<br />
+          <span class="text-gray-dim text-sm sm:text-base mt-2 block">8年以上 廣告實戰經驗，長期服務電商品牌，操作規模橫跨百萬至千萬等級，累積操作廣告花費逾億元。</span>
+        </p>
+        <div class="gold-line w-16 h-0.5 mb-8"></div>
+        <div class="flex flex-wrap gap-4">
+          <a href="#services" class="btn-primary text-sm sm:text-base">
+            查看服務項目
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+          </a>
+          <a href="#cases" class="btn-outline text-sm sm:text-base">了解過往案例</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indication down arrow -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-60">
+      <span class="text-[10px] uppercase tracking-widest text-gray-dim font-mono">SCROLL</span>
+      <svg class="w-5 h-5 text-gold animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-6l-7 7-7-7"></path>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ==================== Stats Section ==================== -->
+  <section id="stats" class="py-20 md:py-28 bg-black-soft border-y border-black-border grid-bg-pattern relative reveal">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <!-- Stat Item 1 -->
+        <div class="text-center p-4">
+          <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-gold tracking-tight font-mono">
+            <span class="counter-number" data-target="8">0</span><span class="text-2xl md:text-3xl font-sans">年以上</span>
+          </div>
+          <div class="text-sm font-semibold text-white mt-2">廣告實戰經驗</div>
+          <div class="text-xs text-gray-dim mt-1">含電商、美髮、娛樂等多元行業</div>
+        </div>
+        <!-- Stat Item 2 -->
+        <div class="text-center p-4 border-l border-black-border">
+          <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-gold tracking-tight font-mono">
+            <span class="counter-number" data-target="10">0</span><span class="text-2xl md:text-3xl font-sans">+</span>
+          </div>
+          <div class="text-sm font-semibold text-white mt-2">操作行業類別</div>
+          <div class="text-xs text-gray-dim mt-1">電商、美髮、女性服飾、娛樂…</div>
+        </div>
+        <!-- Stat Item 3 -->
+        <div class="text-center p-4 border-l border-black-border">
+          <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-gold tracking-tight font-mono">
+            <span class="text-3xl md:text-4xl lg:text-5xl font-sans">億元+</span>
+          </div>
+          <div class="text-sm font-semibold text-white mt-2">累積創造電商收益</div>
+          <div class="text-xs text-gray-dim mt-1">長期代操客戶廣告收益累積</div>
+        </div>
+        <!-- Stat Item 4 -->
+        <div class="text-center p-4 border-l border-black-border">
+          <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-gold tracking-tight font-mono">
+            <span class="text-2xl md:text-3xl font-sans">3~12</span><span class="text-3xl md:text-4xl lg:text-5xl font-sans">x</span>
+          </div>
+          <div class="text-sm font-semibold text-white mt-2">操作案例 ROAS 區間</div>
+          <div class="text-xs text-gray-dim mt-1">依行業、規模與操作階段而異</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== Cases Section ==================== -->
+  <section id="cases" class="py-20 md:py-28 relative reveal">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-start mb-12">
+        <span class="section-subtitle">SUCCESS STORIES</span>
+        <h2 class="section-title">過往案例</h2>
+        <p class="text-gray-dim text-sm sm:text-base mt-2 max-w-2xl">
+          資料來源均為真實代操數據與月報（已去識別化處理，品牌名稱、金額替換為區間/倍數，不作任何保證）
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <!-- Case Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Case 1 (km) -->
+        <div class="card-base flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-xs font-medium rounded-full text-amber-400 bg-amber-400/10">美髮電商</span>
+              <span class="text-xs text-gray-dim font-mono">2021/12 起（逾 4 年）</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 leading-snug">美髮電商全平台長期操盤（正職）</h3>
+            <p class="text-xs text-gold/80 font-medium mb-3">某台灣美髮保養電商品牌</p>
+            <p class="text-sm text-gray-light mb-4">以正職身份全責負責美髮電商多平台廣告操盤，整合 KOL／KOC 明星藝人廣告策略，在花費縮減逾 30% 的情況下突破歷史新高。</p>
+            
+            <div class="space-y-2 pt-2 border-t border-black-border">
+              <div class="flex items-start gap-2">
+                <span class="text-gold mt-1 text-xs">◆</span>
+                <span class="text-xs text-gray-light"><strong class="text-white">廣告 ROAS：</strong>近期穩定 3.8x～5.2x（高點 5.5x+）</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-gold mt-1 text-xs">◆</span>
+                <span class="text-xs text-gray-light"><strong class="text-white">月廣告收益：</strong>最高月突破千萬</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-gold mt-1 text-xs">◆</span>
+                <span class="text-xs text-gray-light"><strong class="text-white">廣告效率改善：</strong>花費降低三成，收益達歷史新高</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-6 flex flex-wrap gap-1.5 pt-3 border-t border-black-border/60">
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">Meta Ads</span>
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">Google Ads</span>
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">TikTok Ads</span>
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">LINE LAP</span>
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">Yahoo 廣告</span>
+          </div>
+        </div>
+
+        <!-- Case 2 (mumm) -->
+        <div class="card-base flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-xs font-medium rounded-full text-pink-400 bg-pink-400/10">女性內著電商</span>
+              <span class="text-xs text-gray-dim font-mono">接案代操（多年）</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 leading-snug">女性內著電商 Meta × Google 廣告代操</h3>
+            <p class="text-xs text-gold/80 font-medium mb-3">某台灣女性內著電商品牌</p>
+            <p class="text-sm text-gray-light mb-4">建立精準受眾分層與再行銷漏斗，在不依賴多平台分散的情況下持續推高廣告收益，對品牌整體收益貢獻度達九成以上。</p>
+            
+            <div class="space-y-2 pt-2 border-t border-black-border">
+              <div class="flex items-start gap-2">
+                <span class="text-gold mt-1 text-xs">◆</span>
+                <span class="text-xs text-gray-light"><strong class="text-white">廣告整體 ROAS：</strong>10x 以上（Google 14x+，Meta 10x+）</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-gold mt-1 text-xs">◆</span>
+                <span class="text-xs text-gray-light"><strong class="text-white">官網月收益：</strong>最高近 800 萬（2024 年實績）</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-gold mt-1 text-xs">◆</span>
+                <span class="text-xs text-gray-light"><strong class="text-white">廣告收益佔比：</strong>逾 90%（主要收益驅動）</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-6 flex flex-wrap gap-1.5 pt-3 border-t border-black-border/60">
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">Meta Ads</span>
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">Google Ads</span>
+          </div>
+        </div>
+
+        <!-- Case 3 (hc) -->
+        <div class="card-base flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 text-xs font-medium rounded-full text-cyan-400 bg-cyan-400/10">美妝服飾顧問</span>
+              <span class="text-xs text-gray-dim font-mono">2025/下半年起</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2 leading-snug">美妝服飾電商廣告顧問暨廣告操作</h3>
+            <p class="text-xs text-gold/80 font-medium mb-3">某美妝服飾電商品牌（廣告顧問服務）</p>
+            <p class="text-sm text-gray-light mb-4">以行銷顧問角色整合官網與團購雙渠道廣告策略，從零建構數據 analysis 體系：RFM 會員模型、KOL 評分系統與 Looker Studio 自動化。</p>
+            
+            <div class="space-y-2 pt-2 border-t border-black-border">
+              <div class="flex items-start gap-2">
+                <span class="text-gold mt-1 text-xs">◆</span>
+                <span class="text-xs text-gray-light"><strong class="text-white">廣告整體 ROAS：</strong>7x～12x 區間（最高單月 12x+）</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-gold mt-1 text-xs">◆</span>
+                <span class="text-xs text-gray-light"><strong class="text-white">品牌會員基礎：</strong>7萬+ 名（消費轉換率 70%+）</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-gold mt-1 text-xs">◆</span>
+                <span class="text-xs text-gray-light"><strong class="text-white">數據系統建置：</strong>RFM × KOL 評分 × Looker Studio 自動化</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-6 flex flex-wrap gap-1.5 pt-3 border-t border-black-border/60">
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">Meta Ads</span>
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">Google Ads</span>
+            <span class="px-2 py-0.5 bg-black/50 border border-black-border text-[10px] rounded text-gray-dim">Looker Studio</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== Data Evidence Section (Chart.js) ==================== -->
+  <section id="evidence" class="py-20 md:py-28 bg-black-soft border-y border-black-border reveal">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col items-start mb-12">
+        <span class="section-subtitle">DATA EVIDENCE</span>
+        <h2 class="section-title">數據佐證</h2>
+        <p class="text-gray-light text-sm sm:text-base mt-2 max-w-2xl">
+          以下數據來自實際操作案例，經去識別化處理，以區間、倍數與百分比呈現。
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <!-- KPI Summary Row -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+        <div class="bg-black-card border border-black-border p-5 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-bold text-gold">3x ~ 12x</div>
+          <div class="text-xs font-semibold text-white mt-1">操作案例ROAS區間</div>
+          <div class="text-[10px] text-gray-dim mt-0.5">依規模與平台而異</div>
+        </div>
+        <div class="bg-black-card border border-black-border p-5 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-bold text-gold">8年以上</div>
+          <div class="text-xs font-semibold text-white mt-1">廣告實戰經驗</div>
+          <div class="text-[10px] text-gray-dim mt-0.5">含各行業長期操作</div>
+        </div>
+        <div class="bg-black-card border border-black-border p-5 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-bold text-gold">億元+</div>
+          <div class="text-xs font-semibold text-white mt-1">累積創造電商收益</div>
+          <div class="text-[10px] text-gray-dim mt-0.5">長期代操客戶累積</div>
+        </div>
+        <div class="bg-black-card border border-black-border p-5 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-bold text-gold">6+</div>
+          <div class="text-xs font-semibold text-white mt-1">操作行業類別</div>
+          <div class="text-[10px] text-gray-dim mt-0.5">電商、美髮、服飾等</div>
+        </div>
+      </div>
+
+      <!-- Charts Layout -->
+      <div class="space-y-6">
+        
+        <!-- Charts Top: ROAS and Growth -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Chart 1: ROAS Comparison -->
+          <div class="bg-black-card border border-black-border p-5 rounded-xl flex flex-col justify-between">
+            <div class="mb-4">
+              <h3 class="text-sm font-semibold text-white">主要案例 ROAS 區間對比 (一般 vs 最佳月份)</h3>
+              <p class="text-[11px] text-gray-dim">說明實際代操的 ROAS 穩定區間與最高爆發值</p>
+            </div>
+            <div class="relative h-[200px]">
+              <canvas id="chart-roas"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 2: Revenue Growth -->
+          <div class="bg-black-card border border-black-border p-5 rounded-xl flex flex-col justify-between">
+            <div class="mb-4">
+              <h3 class="text-sm font-semibold text-white">月收益規模成長倍數 (操作前後對比)</h3>
+              <p class="text-[11px] text-gray-dim">顯示長期配合下帶來的品牌總體業績成長規模</p>
+            </div>
+            <div class="relative h-[200px]">
+              <canvas id="chart-revenue-growth"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Bottom: Industry, Platform & Spend Scale -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          
+          <!-- Chart 3: Industry Distribution -->
+          <div class="bg-black-card border border-black-border p-5 rounded-xl flex flex-col justify-between">
+            <div class="mb-2">
+              <h3 class="text-sm font-semibold text-white">操作行業分布 (依時間與預算比重)</h3>
+            </div>
+            <div class="relative h-[160px] flex items-center justify-center">
+              <canvas id="chart-industry"></canvas>
+            </div>
+            <div id="legend-industry" class="flex flex-wrap gap-x-3 gap-y-1 justify-center text-[10px] mt-2 pt-2 border-t border-black-border/60"></div>
+          </div>
+
+          <!-- Chart 4: Platform Distribution -->
+          <div class="bg-black-card border border-black-border p-5 rounded-xl flex flex-col justify-between">
+            <div class="mb-2">
+              <h3 class="text-sm font-semibold text-white">廣告平台預算配比 (實戰操作組合)</h3>
+            </div>
+            <div class="relative h-[160px] flex items-center justify-center">
+              <canvas id="chart-platform"></canvas>
+            </div>
+            <div id="legend-platform" class="flex flex-wrap gap-x-3 gap-y-1 justify-center text-[10px] mt-2 pt-2 border-t border-black-border/60"></div>
+          </div>
+
+          <!-- Chart 5: Spend Scale Growth -->
+          <div class="bg-black-card border border-black-border p-5 rounded-xl flex flex-col justify-between">
+            <div class="mb-2">
+              <h3 class="text-sm font-semibold text-white">廣告花費規模成長倍數</h3>
+              <p class="text-[10px] text-gray-dim">操作起始月與高峰月預算投放承受力成長</p>
+            </div>
+            <div class="relative h-[170px]">
+              <canvas id="chart-spend-growth"></canvas>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Footnote Disclaimer -->
+      <p class="text-xs text-gray-muted italic mt-8 text-center sm:text-left">
+        「所有數據為真實案例去識別化後的代表性區間，因行業、預算規模及帳戶初始狀況不同，實際成效因個案而異。本頁數據不構成任何成效保證。」
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== Career Section ==================== -->
+  <section id="career" class="py-20 md:py-28 relative reveal">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col items-start mb-12">
+        <span class="section-subtitle">CAREER JOURNEY</span>
+        <h2 class="section-title">生涯歷程</h2>
+        <p class="text-gray-light text-sm sm:text-base mt-2 max-w-2xl">
+          從接案起步到千萬規模操盤，8年以上 廣告實戰積累。
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <!-- Vertical Timeline -->
+      <div class="relative pl-4 sm:pl-8 before:content-[''] before:absolute before:left-4 before:sm:left-8 before:top-2 before:bottom-2 before:w-[1px] before:bg-gold/20">
+        
+        <!-- Node 1 (2025–) -->
+        <div class="relative pl-8 sm:pl-12 pb-12 group">
+          <div class="absolute -left-[5px] sm:-left-[5px] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-gold group-hover:bg-gold transition-colors duration-300"></div>
+          
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+            <span class="text-xl font-bold text-gold font-mono">2025–</span>
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border border-gold/40 text-gold bg-gold/5 max-w-max">顧問升維</span>
+            <span class="inline-block px-2 py-0.5 bg-gold/10 border border-gold/30 text-gold text-xs font-medium rounded max-w-max">ROAS 7x～12x+ / 7萬+ 會員</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">美妝服飾電商廣告顧問暨廣告操作</h3>
+          <p class="text-sm text-gray-light max-w-3xl leading-relaxed">
+            以廣告顧問角色協助某美妝服飾電商整合官網與團購雙渠道廣告策略，並自行建置完整數據 analysis 體系：RFM 會員模型、KOL 評分系統、Looker Studio 自動化報表、素材決策系統與用戶行為儀表板。
+          </p>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">廣告顧問</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">RFM模型</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">KOL評分</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">Looker Studio</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">數據分析</span>
+          </div>
+        </div>
+
+        <!-- Node 2 (接案多年) -->
+        <div class="relative pl-8 sm:pl-12 pb-12 group">
+          <div class="absolute -left-[5px] sm:-left-[5px] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-gold group-hover:bg-gold transition-colors duration-300"></div>
+          
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+            <span class="text-xl font-bold text-gold font-mono">接案（多年）</span>
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border border-gold/40 text-gold bg-gold/5 max-w-max">精準雙平台</span>
+            <span class="inline-block px-2 py-0.5 bg-gold/10 border border-gold/30 text-gold text-xs font-medium rounded max-w-max">ROAS 10x+ / 月收益近 800 萬</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">女性內著電商 Meta × Google 接案代操</h3>
+          <p class="text-sm text-gray-light max-w-3xl leading-relaxed">
+            以接案形式負責某台灣女性內著電商 Meta 與 Google 雙平台廣告代操，建立精準受眾分層與再行銷漏斗，廣告收益佔 brand 官網總收益逾九成，官網月收益最高近 800 萬（2024 年實績）。
+          </p>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">Meta Ads</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">Google Ads</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">接案</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">女性電商</span>
+          </div>
+        </div>
+
+        <!-- Node 3 (2021/12-2026/06) -->
+        <div class="relative pl-8 sm:pl-12 pb-12 group">
+          <div class="absolute -left-[5px] sm:-left-[5px] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-gold group-hover:bg-gold transition-colors duration-300"></div>
+          
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+            <span class="text-xl font-bold text-gold font-mono">2021/12–2026/06</span>
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border border-gold/40 text-gold bg-gold/5 max-w-max">正職深耕</span>
+            <span class="inline-block px-2 py-0.5 bg-gold/10 border border-gold/30 text-gold text-xs font-medium rounded max-w-max">最高月突破千萬</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">美髮電商品牌全平台長期操盤（正職）</h3>
+          <p class="text-sm text-gray-light max-w-3xl leading-relaxed">
+            以正職身份長期負責某台灣美髮保養電商多平台廣告全責操盤。整合 KOL／KOC 明星藝人廣告策略，月廣告預算從數十萬成長至逾百萬，月廣告收益突破千萬等級，廣告 ROAS 近期穩定 3.8x～5.2x，廣告效率顯著優化。
+          </p>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">Google Ads</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">Meta Ads</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">TikTok Ads</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">LINE LAP</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">Yahoo 廣告</span>
+          </div>
+        </div>
+
+        <!-- Node 4 (2021) -->
+        <div class="relative pl-8 sm:pl-12 pb-12 group">
+          <div class="absolute -left-[5px] sm:-left-[5px] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-gold group-hover:bg-gold transition-colors duration-300"></div>
+          
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+            <span class="text-xl font-bold text-gold font-mono">2021</span>
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border border-gold/40 text-gold bg-gold/5 max-w-max">多元拓展</span>
+            <span class="inline-block px-2 py-0.5 bg-gold/10 border border-gold/30 text-gold text-xs font-medium rounded max-w-max">服飾 ROAS 6x+ / 直播收益 +23%</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">跨產業多角化操作</h3>
+          <p class="text-sm text-gray-light max-w-3xl leading-relaxed">
+            同步操作：傳統製造業 OEM 轉 brand 電商（整合多角化通路與團購策略）、另一服飾電商 ROAS 達 6 倍以上、直播娛樂平台 Google+FB 廣告（3個月累積收益成長 23%+）。
+          </p>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">多平台</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">傳產轉型</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">直播娛樂</span>
+          </div>
+        </div>
+
+        <!-- Node 5 (2020) -->
+        <div class="relative pl-8 sm:pl-12 pb-12 group">
+          <div class="absolute -left-[5px] sm:-left-[5px] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-gold group-hover:bg-gold transition-colors duration-300"></div>
+          
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+            <span class="text-xl font-bold text-gold font-mono">2020</span>
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border border-gold/40 text-gold bg-gold/5 max-w-max">電商突破</span>
+            <span class="inline-block px-2 py-0.5 bg-gold/10 border border-gold/30 text-gold text-xs font-medium rounded max-w-max">單品 ROAS 10x+ / 整體 18x+</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">電商服飾 FB/IG 高 ROAS 操作</h3>
+          <p class="text-sm text-gray-light max-w-3xl leading-relaxed">
+            主攻 Facebook 與 Instagram 廣告，操作電商服飾 brand，單品廣告 ROAS 達 10 倍以上，整體業績 ROAS 達 18 倍以上，建立電商廣告選品與受眾測試框架。
+          </p>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">Meta Ads</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">電商</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">服飾</span>
+          </div>
+        </div>
+
+        <!-- Node 6 (2019) -->
+        <div class="relative pl-8 sm:pl-12 pb-4 group">
+          <div class="absolute -left-[5px] sm:-left-[5px] top-2 w-3.5 h-3.5 rounded-full bg-black border-2 border-gold group-hover:bg-gold transition-colors duration-300"></div>
+          
+          <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+            <span class="text-xl font-bold text-gold font-mono">2019</span>
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border border-gold/40 text-gold bg-gold/5 max-w-max">入行起步</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">接案操作，廣告基礎積累</h3>
+          <p class="text-sm text-gray-light max-w-3xl leading-relaxed">
+            初期接案操作餐飲業 Google 廣告，同步鑽研文案撰寫與素材邏輯，建立廣告操盤基礎思維。
+          </p>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">Google Ads</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">餐飲</span>
+            <span class="px-2 py-0.5 bg-black-card border border-black-border text-[11px] rounded text-gray-dim">接案</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== Platforms & Data Capability Section ==================== -->
+  <section id="platforms" class="py-20 md:py-28 bg-black-soft border-y border-black-border relative reveal">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col items-start mb-12">
+        <span class="section-subtitle">SKILLS & TOOLS</span>
+        <h2 class="section-title">操作平台 & 數據分析能力</h2>
+        <p class="text-gray-light text-sm sm:text-base mt-2 max-w-2xl">
+          兼具媒體購買實操深度與後端數據整合高度的整合能力。
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <!-- Platforms Badges Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        
+        <!-- Left: Ads Platforms -->
+        <div class="bg-black-card border border-black-border rounded-xl p-6">
+          <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+            <span class="w-1.5 h-4 bg-gold rounded-full"></span> 廣告投放平台
+          </h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold font-bold text-xs bg-gold/10 px-1.5 py-0.5 rounded">Meta</span>
+              <div class="text-[11px] sm:text-xs">
+                <p class="text-white font-medium">Meta Ads</p>
+                <p class="text-gray-dim text-[10px]">熟練 / FB & IG 投放</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold font-bold text-xs bg-gold/10 px-1.5 py-0.5 rounded">GGL</span>
+              <div class="text-[11px] sm:text-xs">
+                <p class="text-white font-medium">Google Ads</p>
+                <p class="text-gray-dim text-[10px]">熟練 / 搜尋、購物、YT</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold font-bold text-xs bg-gold/10 px-1.5 py-0.5 rounded">LAP</span>
+              <div class="text-[11px] sm:text-xs">
+                <p class="text-white font-medium">LINE LAP</p>
+                <p class="text-gray-dim text-[10px]">熟練 / LINE官方版位</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold font-bold text-xs bg-gold/10 px-1.5 py-0.5 rounded">TKT</span>
+              <div class="text-[11px] sm:text-xs">
+                <p class="text-white font-medium">TikTok Ads</p>
+                <p class="text-gray-dim text-[10px]">熟練 / 短影音代操</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold font-bold text-xs bg-gold/10 px-1.5 py-0.5 rounded">YHO</span>
+              <div class="text-[11px] sm:text-xs">
+                <p class="text-white font-medium">Yahoo 廣告</p>
+                <p class="text-gray-dim text-[10px]">熟練 / 原生與再行銷</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold font-bold text-xs bg-gold/10 px-1.5 py-0.5 rounded">DCD</span>
+              <div class="text-[11px] sm:text-xs">
+                <p class="text-white font-medium">Dcard 廣告</p>
+                <p class="text-gray-dim text-[10px]">熟練 / 分眾論壇投放</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Analytics Tools -->
+        <div class="bg-black-card border border-black-border rounded-xl p-6">
+          <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+            <span class="w-1.5 h-4 bg-gold rounded-full"></span> 分析與報表工具
+          </h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold text-xs font-bold">GA4</span>
+              <div class="text-xs">
+                <p class="text-white font-medium">Google Analytics 4</p>
+                <p class="text-gray-dim text-[10px]">事件與轉換分析</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold text-xs font-bold">LKR</span>
+              <div class="text-xs">
+                <p class="text-white font-medium">Looker Studio</p>
+                <p class="text-gray-dim text-[10px]">客製化 Dashboard 建置</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold text-xs font-bold">GSC</span>
+              <div class="text-xs">
+                <p class="text-white font-medium">Search Console</p>
+                <p class="text-gray-dim text-[10px]">自然流量與 SEO 洞察</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold text-xs font-bold">GTM</span>
+              <div class="text-xs">
+                <p class="text-white font-medium">Tag Manager</p>
+                <p class="text-gray-dim text-[10px]">代碼整合管理與埋設</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold text-xs font-bold">MBS</span>
+              <div class="text-xs">
+                <p class="text-white font-medium">Business Suite</p>
+                <p class="text-gray-dim text-[10px]">粉專管理與像素整合</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 px-3 py-2 bg-black/60 border border-black-border/80 rounded-lg">
+              <span class="text-gold text-xs font-bold">SHT</span>
+              <div class="text-xs">
+                <p class="text-white font-medium">Google Sheets</p>
+                <p class="text-gray-dim text-[10px]">自動化拉數與報表</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Data Capability Blocks -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="data">
+        
+        <!-- Card 1 -->
+        <div class="bg-black-card border border-black-border p-6 rounded-xl hover:border-gold/40 transition-colors duration-300">
+          <div class="w-12 h-12 bg-gold/10 border border-gold/20 flex items-center justify-center rounded-lg mb-5 text-gold">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">數據追蹤整合</h3>
+          <ul class="text-xs text-gray-light space-y-2 leading-relaxed">
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> GA4 自訂事件與轉換追蹤設置</li>
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> GTM 全域行銷代碼封裝與精簡</li>
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> 轉換像素設置（Meta CAPI、Google 增強轉換）</li>
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> 跨平台歸因模型（解決隱私政策漏失）</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-black-card border border-black-border p-6 rounded-xl hover:border-gold/40 transition-colors duration-300">
+          <div class="w-12 h-12 bg-gold/10 border border-gold/20 flex items-center justify-center rounded-lg mb-5 text-gold">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">Looker Studio 報表 & 客製化 Dashboard</h3>
+          <ul class="text-xs text-gray-light space-y-2 leading-relaxed">
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> 多廣告平台數據源即時整合面板</li>
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> 客製化數據 Dashboard 設計與建置</li>
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> 自動化每日 / 週業績報告視覺化</li>
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> 讓決策層一眼掌握獲客成本與 ROAS 變動</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-black-card border border-black-border p-6 rounded-xl hover:border-gold/40 transition-colors duration-300">
+          <div class="w-12 h-12 bg-gold/10 border border-gold/20 flex items-center justify-center rounded-lg mb-5 text-gold">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18.2"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">自動化流程 & 流量分析</h3>
+          <ul class="text-xs text-gray-light space-y-2 leading-relaxed">
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> Google Sheets 自動化提取廣告後台數據</li>
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> Google Search Console 流量分析整合</li>
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> 帳戶異常預算花費 / 像素斷線即時通報</li>
+            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-gold rounded-full"></span> 廣告自動規則、超額警報與防損機制</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== Services Section ==================== -->
+  <section id="services" class="py-20 md:py-28 relative reveal">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col items-start mb-12">
+        <span class="section-subtitle">WHAT I DO</span>
+        <h2 class="section-title">服務項目</h2>
+        <p class="text-gray-light text-sm sm:text-base mt-2 max-w-2xl">
+          提供高彈性、數據透明、可量化的整合型廣告行銷顧問服務。
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <!-- Desktop Services -->
+      <div class="hidden md:grid grid-cols-12 gap-8 items-start mb-20">
+        <!-- Left Side: Tab Buttons List -->
+        <div class="col-span-5 flex flex-col gap-2.5">
+          <button onclick="switchService('ad-management')" id="tab-ad-management" class="service-tab text-left p-5 rounded-xl border border-gold bg-gold/5 text-gold hover:bg-gold/10 transition-all duration-300">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">📊</span>
+              <span class="font-bold">廣告帳戶代操</span>
+            </div>
+            <p class="text-[11px] text-gold-light mt-1 pl-8">全權負責廣告策略規劃、執行與優化</p>
+          </button>
+          <button onclick="switchService('ad-audit')" id="tab-ad-audit" class="service-tab text-left p-5 rounded-xl border border-black-border text-gray-light hover:border-gold/40 hover:text-white transition-all duration-300">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">🔍</span>
+              <span class="font-bold">廣告健診 & 優化顧問</span>
+            </div>
+            <p class="text-[11px] text-gray-dim mt-1 pl-8">找出現有廣告帳戶的問題與改善空間</p>
+          </button>
+          <button onclick="switchService('dashboard')" id="tab-dashboard" class="service-tab text-left p-5 rounded-xl border border-black-border text-gray-light hover:border-gold/40 hover:text-white transition-all duration-300">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">📈</span>
+              <span class="font-bold">數據報表建置</span>
+            </div>
+            <p class="text-[11px] text-gray-dim mt-1 pl-8">打造自動化儀表板，讓數據即時可視</p>
+          </button>
+          <button onclick="switchService('creative-strategy')" id="tab-creative-strategy" class="service-tab text-left p-5 rounded-xl border border-black-border text-gray-light hover:border-gold/40 hover:text-white transition-all duration-300">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">🎯</span>
+              <span class="font-bold">素材策略規劃</span>
+            </div>
+            <p class="text-[11px] text-gray-dim mt-1 pl-8">數據導向素材方向，提升點擊與轉化率</p>
+          </button>
+          <button onclick="switchService('consulting')" id="tab-consulting" class="service-tab text-left p-5 rounded-xl border border-black-border text-gray-light hover:border-gold/40 hover:text-white transition-all duration-300">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">💡</span>
+              <span class="font-bold">行銷顧問諮詢</span>
+            </div>
+            <p class="text-[11px] text-gray-dim mt-1 pl-8">針對漏斗瓶頸與特定操作難題彈性覆盤</p>
+          </button>
+        </div>
+
+        <!-- Right Side: Content Details Pane -->
+        <div class="col-span-7 bg-black-card border border-black-border rounded-xl p-8 min-h-[420px] flex flex-col justify-between" id="service-detail-box">
+          <div>
+            <div class="flex items-center justify-between mb-4 pb-4 border-b border-black-border">
+              <h3 class="text-xl font-bold text-white flex items-center gap-2" id="detail-name">廣告帳戶代操</h3>
+              <span class="text-2xl" id="detail-icon">📊</span>
+            </div>
+            <p class="text-gold text-sm font-medium mb-6" id="detail-tagline">全權負責廣告策略規劃、執行與日常優化</p>
+            
+            <div class="mb-6">
+              <p class="text-xs font-semibold text-white uppercase tracking-wider mb-2.5">適合對象：</p>
+              <div class="flex flex-wrap gap-1.5" id="detail-audience"></div>
+            </div>
+
+            <div class="mb-6">
+              <p class="text-xs font-semibold text-white uppercase tracking-wider mb-2.5">服務包含項目：</p>
+              <ul class="space-y-2" id="detail-includes"></ul>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-black-border flex items-center justify-between text-xs text-gray-dim">
+            <span>不包含項目：<strong class="text-gray-light font-medium" id="detail-notincludes">不含素材製作（可協助規格建議）</strong></span>
+            <a href="#contact" class="text-gold hover:underline flex items-center gap-1 font-medium">
+              立即預約諮詢
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Services Accordions -->
+      <div class="md:hidden flex flex-col gap-4 mb-16" id="services-accordion"></div>
+
+      <!-- Collaboration Process Flow -->
+      <div class="border-t border-black-border/60 pt-16">
+        <h3 class="text-sm font-bold text-white uppercase tracking-widest text-center mb-10">溫浩東 的合作優化流程</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-black-card border border-black-border p-5 rounded-xl relative overflow-hidden group">
+            <span class="absolute -right-3 -bottom-3 text-7xl font-bold font-mono text-gold/5 group-hover:text-gold/10 transition-colors duration-300">01</span>
+            <div class="text-xs text-gold font-bold font-mono mb-2">STEP 01</div>
+            <h4 class="text-sm font-semibold text-white mb-2">初步諮詢</h4>
+            <p class="text-xs text-gray-dim leading-relaxed">理解與釐清您的業務目標、產品現況、痛點與預算規模。</p>
+          </div>
+          <div class="bg-black-card border border-black-border p-5 rounded-xl relative overflow-hidden group">
+            <span class="absolute -right-3 -bottom-3 text-7xl font-bold font-mono text-gold/5 group-hover:text-gold/10 transition-colors duration-300">02</span>
+            <div class="text-xs text-gold font-bold font-mono mb-2">STEP 02</div>
+            <h4 class="text-sm font-semibold text-white mb-2">提案規劃</h4>
+            <p class="text-xs text-gray-dim leading-relaxed">提供為您品牌量身打造的專屬多平台投放配比與服務方案。</p>
+          </div>
+          <div class="bg-black-card border border-black-border p-5 rounded-xl relative overflow-hidden group">
+            <span class="absolute -right-3 -bottom-3 text-7xl font-bold font-mono text-gold/5 group-hover:text-gold/10 transition-colors duration-300">03</span>
+            <div class="text-xs text-gold font-bold font-mono mb-2">STEP 03</div>
+            <h4 class="text-sm font-semibold text-white mb-2">正式執行</h4>
+            <p class="text-xs text-gray-dim leading-relaxed">深度建置廣告帳戶、全鏈路事件轉換與像素追蹤、正式上線。</p>
+          </div>
+          <div class="bg-black-card border border-black-border p-5 rounded-xl relative overflow-hidden group">
+            <span class="absolute -right-3 -bottom-3 text-7xl font-bold font-mono text-gold/5 group-hover:text-gold/10 transition-colors duration-300">04</span>
+            <div class="text-xs text-gold font-bold font-mono mb-2">STEP 04</div>
+            <h4 class="text-sm font-semibold text-white mb-2">持續優化</h4>
+            <p class="text-xs text-gray-dim leading-relaxed">定期覆盤多平台數據歸因、動態調整出價、產出可視化報告。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== Contact Section ==================== -->
+  <section id="contact" class="py-20 md:py-28 bg-black-soft border-t border-black-border relative reveal">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Side: Information text -->
+        <div class="lg:col-span-5">
+          <span class="section-subtitle">GET IN TOUCH</span>
+          <h2 class="section-title mb-4">準備好提升您的廣告成效了嗎？</h2>
+          <p class="text-gray-light text-sm sm:text-base leading-relaxed mb-8">
+            歡迎傳送訊息說明您的需求，我將在收到您的諮詢信件後 3 個工作日內儘速回覆。
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 p-3 bg-black/40 border border-black-border/80 rounded-xl">
+              <div class="w-10 h-10 bg-gold/10 border border-gold/20 flex items-center justify-center rounded-lg text-gold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </div>
+              <div>
+                <p class="text-[10px] text-gray-dim uppercase font-bold tracking-wider">Email 信箱</p>
+                <a href="mailto:wndong11@gmail.com" class="text-sm text-white hover:text-gold transition-colors font-medium">wndong11@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 p-3 bg-black/40 border border-black-border/80 rounded-xl">
+              <div class="w-10 h-10 bg-gold/10 border border-gold/20 flex items-center justify-center rounded-lg text-gold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+              </div>
+              <div>
+                <p class="text-[10px] text-gray-dim uppercase font-bold tracking-wider">LINE 線上諮詢</p>
+                <a href="https://line.me/R/ti/p/~nick_wn" target="_blank" class="text-sm text-white hover:text-gold transition-colors font-medium">LINE ID: nick_wn</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 p-3 bg-black/40 border border-black-border/80 rounded-xl">
+              <div class="w-10 h-10 bg-gold/10 border border-gold/20 flex items-center justify-center rounded-lg text-gold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              </div>
+              <div>
+                <p class="text-[10px] text-gray-dim uppercase font-bold tracking-wider">服務據點</p>
+                <p class="text-sm text-white font-medium">台灣 (支援全台灣全遠端合作模式)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Mailto action form -->
+        <div class="lg:col-span-7 bg-black-card border border-black-border rounded-xl p-6 sm:p-8">
+          <form action="mailto:wndong11@gmail.com" method="post" enctype="text/plain" class="space-y-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-xs font-semibold text-gray-light uppercase tracking-wider mb-2">您的姓名 / 聯絡窗口 <span class="text-gold">*</span></label>
+                <input type="text" id="name" name="聯絡人" required class="w-full bg-black/50 border border-black-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold/60 transition-colors" placeholder="王小明先生" />
+              </div>
+              <div>
+                <label for="contact-method" class="block text-xs font-semibold text-gray-light uppercase tracking-wider mb-2">聯絡電話、Email 或 LINE ID <span class="text-gold">*</span></label>
+                <input type="text" id="contact-method" name="聯絡方式" required class="w-full bg-black/50 border border-black-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold/60 transition-colors" placeholder="信箱或 LINE ID 方便後續連繫" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="brand" class="block text-xs font-semibold text-gray-light uppercase tracking-wider mb-2">公司名稱 / 品牌產品名稱 <span class="text-gold">*</span></label>
+                <input type="text" id="brand" name="公司品牌" required class="w-full bg-black/50 border border-black-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold/60 transition-colors" placeholder="XX 美妝保養電商品牌" />
+              </div>
+              <div>
+                <label for="budget" class="block text-xs font-semibold text-gray-light uppercase tracking-wider mb-2">目前月度廣告預算規模 <span class="text-gold">*</span></label>
+                <select id="budget" name="月預算規模" required class="w-full bg-black/50 border border-black-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold/60 transition-colors appearance-none cursor-pointer">
+                  <option value="" disabled selected class="text-gray-dim">選擇月預算範圍</option>
+                  <option value="5萬以下">NT$ 5 萬以下 / 月</option>
+                  <option value="5萬-20萬">NT$ 5 萬 - 20 萬 / 月</option>
+                  <option value="20萬-50萬">NT$ 20 萬 - 50 萬 / 月</option>
+                  <option value="50萬以上">NT$ 50 萬以上 / 月</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="requirement" class="block text-xs font-semibold text-gray-light uppercase tracking-wider mb-2">簡單說明您的代操或優化需求 <span class="text-gold">*</span></label>
+              <textarea id="requirement" name="需求說明" required rows="4" class="w-full bg-black/50 border border-black-border rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold/60 transition-colors resize-none" placeholder="例如：我們希望針對即將上線的夏季新品，拓展 Meta 與 TikTok 廣告，同時需要建置 Looker Studio 來追蹤 ROAS..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full btn-primary py-3.5 flex justify-center text-sm font-semibold tracking-wide">
+              送出
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="bg-black border-t border-black-border py-8 text-xs text-gray-dim">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="text-white font-bold font-mono tracking-wider">溫浩東</span>
+        <span>&copy; 2024 溫浩東. All rights reserved.</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span>Made with data & strategy.</span>
+        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+        <span class="text-[10px] uppercase font-bold tracking-widest text-gold/60">Astro & Chart.js Ported Mockup</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==================== Interactive Scripts ==================== -->
+  <script>
+    const servicesData = {
+      'ad-management': {
+        name: '廣告帳戶代操',
+        icon: '📊',
+        tagline: '全權負責廣告策略規劃、執行與日常優化',
+        audience: ['電商品牌', '服務業', '有穩定廣告預算的品牌主'],
+        includes: [
+          '廣告帳戶架構規劃與建置',
+          '受眾策略與素材方向建議',
+          '日常出價、預算、版位管理',
+          '每月成效報告與策略調整',
+          '廣告像素 / 轉換追蹤設置'
+        ],
+        notIncludes: '不含素材製作（可另行協助規格建議）'
+      },
+      'ad-audit': {
+        name: '廣告健診 & 優化顧問',
+        icon: '🔍',
+        tagline: '找出現有廣告帳戶的問題與改善空間',
+        audience: ['自行投放效果不佳的品牌', '想要第二意見的行銷團隊'],
+        includes: [
+          '帳戶結構深度審查',
+          '受眾重疊與預算效率分析',
+          '素材表現評估',
+          '競品廣告觀察報告',
+          '書面優化建議報告 + 一次線上說明'
+        ],
+        notIncludes: '不含後續執行（可升級為代操服務）'
+      },
+      'dashboard': {
+        name: '數據報表建置',
+        icon: '📈',
+        tagline: '打造自動化儀表板，讓數據即時可視',
+        audience: ['需要跨平台整合報表的品牌', '想減少手動整理時間的行銷人員'],
+        includes: [
+          'Looker Studio 儀表板客製化',
+          '多平台數據源整合（Meta、Google、GA4）',
+          '自訂 KPI 追蹤面板',
+          '自動化報表定時寄送設定',
+          '報表使用教學'
+        ],
+        notIncludes: '不含需要後端 API 串接的複雜工程'
+      },
+      'creative-strategy': {
+        name: '素材策略規劃',
+        icon: '🎯',
+        tagline: '數據導向的素材方向建議，提升廣告素材效率',
+        audience: ['有設計師但不知道素材方向的品牌', '想提升素材測試效率的團隊'],
+        includes: [
+          '競品素材研究與分析',
+          '素材測試框架規劃',
+          '各平台規格建議',
+          'Hook、CTA 文案方向',
+          '素材測試結果解讀'
+        ],
+        notIncludes: '不含實際設計製作'
+      },
+      'consulting': {
+        name: '行銷顧問諮詢',
+        icon: '💡',
+        tagline: '彈性諮詢，針對特定問題提供專業建議',
+        audience: ['預算有限的新創', '想要定期覆盤的行銷負責人'],
+        includes: [
+          '單次或包月諮詢會議',
+          '廣告策略方向討論',
+          '行銷漏斗問題診斷',
+          '平台操作 Q&A',
+          '會議摘要與行動建議'
+        ],
+        notIncludes: '不含實際帳戶操作'
+      }
+    };
+
+    function switchService(serviceId) {
+      document.querySelectorAll('.service-tab').forEach(tab => {
+        tab.classList.remove('border-gold', 'bg-gold/5', 'text-gold');
+        tab.classList.add('border-black-border', 'text-gray-light');
+        const descText = tab.querySelector('p');
+        if (descText) descText.className = 'text-[11px] text-gray-dim mt-1 pl-8';
+      });
+
+      const activeTab = document.getElementById(`tab-${serviceId}`);
+      if (activeTab) {
+        activeTab.classList.remove('border-black-border', 'text-gray-light');
+        activeTab.classList.add('border-gold', 'bg-gold/5', 'text-gold');
+        const activeDescText = activeTab.querySelector('p');
+        if (activeDescText) activeDescText.className = 'text-[11px] text-gold-light mt-1 pl-8';
+      }
+
+      const data = servicesData[serviceId];
+      if (!data) return;
+
+      const detailBox = document.getElementById('service-detail-box');
+      detailBox.classList.add('opacity-0');
+      
+      setTimeout(() => {
+        document.getElementById('detail-name').innerText = data.name;
+        document.getElementById('detail-icon').innerText = data.icon;
+        document.getElementById('detail-tagline').innerText = data.tagline;
+        
+        const audienceDiv = document.getElementById('detail-audience');
+        audienceDiv.innerHTML = '';
+        data.audience.forEach(tag => {
+          const span = document.createElement('span');
+          span.className = 'px-2.5 py-1 text-xs font-medium rounded-full border border-black-border bg-black/40 text-gray-light';
+          span.innerText = tag;
+          audienceDiv.appendChild(span);
+        });
+
+        const includesList = document.getElementById('detail-includes');
+        includesList.innerHTML = '';
+        data.includes.forEach(bullet => {
+          const li = document.createElement('li');
+          li.className = 'flex items-start gap-2 text-xs text-gray-light leading-relaxed';
+          li.innerHTML = `<span class="text-gold mt-1 text-[10px]">✔</span> <span>${bullet}</span>`;
+          includesList.appendChild(li);
+        });
+
+        document.getElementById('detail-notincludes').innerText = data.notIncludes;
+        detailBox.classList.remove('opacity-0');
+      }, 150);
+    }
+
+    function buildMobileAccordion() {
+      const container = document.getElementById('services-accordion');
+      container.innerHTML = '';
+      
+      Object.keys(servicesData).forEach((key, idx) => {
+        const item = servicesData[key];
+        const isOpen = idx === 0;
+        
+        const accordionItem = document.createElement('div');
+        accordionItem.className = `border rounded-xl transition-colors duration-300 ${isOpen ? 'border-gold bg-gold/5' : 'border-black-border bg-black-card'}`;
+        accordionItem.id = `accordion-${key}`;
+
+        accordionItem.innerHTML = `
+          <button onclick="toggleAccordion('${key}')" class="w-full text-left p-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-lg">${item.icon}</span>
+              <span class="font-bold text-sm ${isOpen ? 'text-gold' : 'text-white'}">${item.name}</span>
+            </div>
+            <svg id="arrow-${key}" class="w-4 h-4 text-gold transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="content-${key}" class="px-5 pb-5 overflow-hidden transition-all duration-300 ${isOpen ? 'block' : 'hidden'}">
+            <p class="text-gold text-xs font-medium mb-4">${item.tagline}</p>
+            <div class="mb-4">
+              <p class="text-[10px] font-semibold text-white uppercase tracking-wider mb-2">適合對象：</p>
+              <div class="flex flex-wrap gap-1.5">
+                ${item.audience.map(t => `<span class="px-2 py-0.5 text-[10px] border border-black-border bg-black/40 text-gray-dim rounded-full">${t}</span>`).join('')}
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-[10px] font-semibold text-white uppercase tracking-wider mb-2">服務包含：</p>
+              <ul class="space-y-1.5">
+                ${item.includes.map(b => `<li class="flex items-start gap-2 text-xs text-gray-light leading-relaxed"><span class="text-gold mt-1 text-[8px]">✔</span><span>${b}</span></li>`).join('')}
+              </ul>
+            </div>
+            <div class="pt-3 border-t border-black-border/60 text-[10px] text-gray-dim">
+              不包含項目：<strong class="text-gray-dim font-medium">${item.notIncludes}</strong>
+            </div>
+          </div>
+        `;
+        container.appendChild(accordionItem);
+      });
+    }
+
+    function toggleAccordion(key) {
+      const content = document.getElementById(`content-${key}`);
+      const arrow = document.getElementById(`arrow-${key}`);
+      const parent = document.getElementById(`accordion-${key}`);
+      const isHidden = content.classList.contains('hidden');
+      
+      Object.keys(servicesData).forEach(k => {
+        document.getElementById(`content-${k}`).classList.add('hidden');
+        document.getElementById(`arrow-${k}`).classList.remove('rotate-180');
+        const p = document.getElementById(`accordion-${k}`);
+        p.className = 'border border-black-border bg-black-card rounded-xl transition-colors duration-300';
+        p.querySelector('span.font-bold').className = 'font-bold text-sm text-white';
+      });
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        arrow.classList.add('rotate-180');
+        parent.className = 'border border-gold bg-gold/5 rounded-xl transition-colors duration-300';
+        parent.querySelector('span.font-bold').className = 'font-bold text-sm text-gold';
+      }
+    }
+
+
+    // -----------------------------------------------------------------
+    // Hamburger and Mobile Overlay Navigation Toggle
+    // -----------------------------------------------------------------
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburger1 = document.getElementById('hamburger-1');
+    const hamburger2 = document.getElementById('hamburger-2');
+    const hamburger3 = document.getElementById('hamburger-3');
+
+    function toggleMenu() {
+      const isOpen = mobileMenu.classList.contains('opacity-100');
+      if (isOpen) {
+        mobileMenu.classList.remove('opacity-100');
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+        hamburger1.classList.remove('rotate-45', 'translate-y-2');
+        hamburger2.classList.remove('opacity-0');
+        hamburger3.classList.remove('-rotate-45', '-translate-y-2');
+        document.body.classList.remove('overflow-hidden');
+      } else {
+        mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+        mobileMenu.classList.add('opacity-100');
+        hamburger1.classList.add('rotate-45', 'translate-y-2');
+        hamburger2.classList.add('opacity-0');
+        hamburger3.classList.add('-rotate-45', '-translate-y-2');
+        document.body.classList.add('overflow-hidden');
+      }
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+    
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('opacity-100');
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+        hamburger1.classList.remove('rotate-45', 'translate-y-2');
+        hamburger2.classList.remove('opacity-0');
+        hamburger3.classList.remove('-rotate-45', '-translate-y-2');
+        document.body.classList.remove('overflow-hidden');
+      });
+    });
+
+
+    // -----------------------------------------------------------------
+    // Stats Counter Animation (using Intersection Observer)
+    // -----------------------------------------------------------------
+    function initStatsCounter() {
+      const counterNumbers = document.querySelectorAll('.counter-number');
+      
+      const countUp = (element) => {
+        const target = +element.getAttribute('data-target');
+        const duration = 1500;
+        const stepTime = Math.max(Math.floor(duration / target), 15);
+        let current = 0;
+
+        const timer = setInterval(() => {
+          current += 1;
+          element.innerText = current;
+          if (current >= target) {
+            element.innerText = target;
+            clearInterval(timer);
+          }
+        }, stepTime);
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            countUp(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.8 });
+
+      counterNumbers.forEach(num => observer.observe(num));
+    }
+
+
+    // -----------------------------------------------------------------
+    // Scroll Reveal (Sections Fade-in Fade-up)
+    // -----------------------------------------------------------------
+    function initScrollReveal() {
+      const revealItems = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      revealItems.forEach(item => revealObserver.observe(item));
+    }
+
+
+    // -----------------------------------------------------------------
+    // Chart.js Premium Dark Theme Integration & Setup
+    // -----------------------------------------------------------------
+    function initCharts() {
+      Chart.defaults.color = '#888888';
+      Chart.defaults.font.family = "'Noto Sans TC','Inter',sans-serif";
+      Chart.defaults.font.size = 11;
+
+      const tooltipStyle = {
+        backgroundColor: '#161616',
+        borderColor: '#333333',
+        borderWidth: 1,
+        titleColor: '#ffffff',
+        bodyColor: '#aaaaaa',
+        padding: 12,
+        cornerRadius: 6,
+        displayColors: true,
+      };
+
+      const gridColor = 'rgba(255,255,255,0.04)';
+
+      // --- Chart 1: ROAS Comparison (Grouped Bar) ---
+      const ctxRoas = document.getElementById('chart-roas').getContext('2d');
+      new Chart(ctxRoas, {
+        type: 'bar',
+        data: {
+          labels: [['美髮電商', '（多平台）'], ['女性內著', '電商'], ['美妝服飾', '（顧問）']],
+          datasets: [
+            { label: '一般月份 ROAS', data: [3.5, 10.0, 7.5], backgroundColor: '#333333', borderRadius: 4 },
+            { label: '最佳月份 ROAS', data: [5.5, 14.5, 12.1], backgroundColor: '#C9A84C', borderRadius: 4 }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            tooltip: tooltipStyle,
+            legend: { display: true, position: 'top', align: 'end', labels: { boxWidth: 12, color: '#aaaaaa' } }
+          },
+          scales: {
+            x: { grid: { display: false }, ticks: { color: '#888888' } },
+            y: { 
+              grid: { color: gridColor }, 
+              ticks: { 
+                color: '#888888',
+                callback: function(v) { return v + 'x'; }
+              },
+              max: 16,
+              beginAtZero: true
+            }
+          }
+        }
+      });
+
+      // --- Chart 2: Revenue Growth Scale (Horizontal Bar) ---
+      const ctxRev = document.getElementById('chart-revenue-growth').getContext('2d');
+      new Chart(ctxRev, {
+        type: 'bar',
+        data: {
+          labels: ['美髮電商', '女性內著電商', '美妝服飾顧問'],
+          datasets: [{
+            label: '操作前後月收益成長倍數',
+            data: [12, 7, 5.8],
+            backgroundColor: [
+              'rgba(201, 168, 76, 1.0)',
+              'rgba(201, 168, 76, 0.75)',
+              'rgba(201, 168, 76, 0.55)'
+            ],
+            borderRadius: 4,
+            barThickness: 24
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            tooltip: {
+              ...tooltipStyle,
+              callbacks: {
+                label: function(ctx) { return '成長 ' + ctx.raw + ' 倍'; }
+              }
+            },
+            legend: { display: false }
+          },
+          scales: {
+            x: { 
+              grid: { color: gridColor }, 
+              ticks: { 
+                color: '#888888',
+                callback: function(v) { return v + 'x'; }
+              },
+              max: 14,
+              beginAtZero: true
+            },
+            y: { grid: { display: false }, ticks: { color: '#888888' } }
+          }
+        }
+      });
+
+      // --- Chart 3: Industry Distribution (Doughnut) ---
+      const ctxInd = document.getElementById('chart-industry').getContext('2d');
+      const chartInd = new Chart(ctxInd, {
+        type: 'doughnut',
+        data: {
+          labels: ['電商（美髮保養）', '電商（女性內著）', '娛樂/直播', '餐飲服務', '傳產轉型', '其他'],
+          datasets: [{
+            data: [35, 25, 12, 12, 10, 6],
+            backgroundColor: ['#C9A84C','#E8C97A','#8B6914','#6B5420','#4a3a10','#2a2a2a'],
+            borderColor: '#111111',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          cutout: '60%',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            tooltip: {
+              ...tooltipStyle,
+              callbacks: {
+                label: function(ctx) { return ' ' + ctx.label + ': ' + ctx.raw + '%'; }
+              }
+            },
+            legend: { display: false }
+          }
+        }
+      });
+
+      // --- Chart 4: Platform Budget (Doughnut) ---
+      const ctxPlat = document.getElementById('chart-platform').getContext('2d');
+      const chartPlat = new Chart(ctxPlat, {
+        type: 'doughnut',
+        data: {
+          labels: ['Meta Ads', 'Google Ads', 'TikTok Ads', 'LINE LAP', 'Yahoo/Dcard'],
+          datasets: [{
+            data: [35, 32, 18, 10, 5],
+            backgroundColor: ['#C9A84C','#E8C97A','#a07830','#6B5420','#3a3020'],
+            borderColor: '#111111',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          cutout: '60%',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            tooltip: {
+              ...tooltipStyle,
+              callbacks: {
+                label: function(ctx) { return ' ' + ctx.label + ': ' + ctx.raw + '%'; }
+              }
+            },
+            legend: { display: false }
+          }
+        }
+      });
+
+      // --- Chart 5: Spend Scale Growth (Bar) ---
+      const ctxSpd = document.getElementById('chart-spend-growth').getContext('2d');
+      new Chart(ctxSpd, {
+        type: 'bar',
+        data: {
+          labels: [['美髮', '電商'], ['女性', '內著'], ['美妝', '服飾']],
+          datasets: [{
+            label: '月預算規模成長倍數',
+            data: [15, 7, 9],
+            backgroundColor: [
+              'rgba(201, 168, 76, 1.0)',
+              'rgba(201, 168, 76, 0.75)',
+              'rgba(201, 168, 76, 0.55)'
+            ],
+            borderRadius: 4,
+            barThickness: 24
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            tooltip: {
+              ...tooltipStyle,
+              callbacks: {
+                label: function(ctx) { return '預算擴張 ' + ctx.raw + ' 倍'; }
+              }
+            },
+            legend: { display: false }
+          },
+          scales: {
+            x: { grid: { display: false }, ticks: { color: '#888888' } },
+            y: { 
+              grid: { color: gridColor }, 
+              ticks: { 
+                color: '#888888',
+                callback: function(v) { return v + 'x'; }
+              },
+              max: 18,
+              beginAtZero: true
+            }
+          }
+        }
+      });
+
+      const buildCustomLegend = (chart, elementId) => {
+        const container = document.getElementById(elementId);
+        container.innerHTML = '';
+        const data = chart.data;
+        const bgColors = data.datasets[0].backgroundColor;
+        
+        data.labels.forEach((label, index) => {
+          const item = document.createElement('div');
+          item.className = 'flex items-center gap-1 cursor-pointer opacity-80 hover:opacity-100 transition-opacity';
+          item.innerHTML = `
+            <span class="w-2.5 h-2.5 rounded-full inline-block" style="background-color: ${bgColors[index]}"></span>
+            <span class="text-gray-light text-[10px]">${label} (${data.datasets[0].data[index]}%)</span>
+          `;
+          container.appendChild(item);
+        });
+      };
+
+      buildCustomLegend(chartInd, 'legend-industry');
+      buildCustomLegend(chartPlat, 'legend-platform');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      switchService('ad-management');
+      buildMobileAccordion();
+      initStatsCounter();
+      initScrollReveal();
+      initCharts();
+
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.classList.add('py-1', 'bg-black/95', 'shadow-lg');
+          header.classList.remove('py-0');
+        } else {
+          header.classList.remove('py-1', 'bg-black/95', 'shadow-lg');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
