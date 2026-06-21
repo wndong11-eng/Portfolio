@@ -228,6 +228,7 @@
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
           </a>
           <a href="#cases" class="btn-outline text-sm sm:text-base">了解過往案例</a>
+          <a href="#contact" class="btn-outline text-sm sm:text-base">與我聯繫</a>
         </div>
       </div>
     </div>
@@ -1071,9 +1072,27 @@
     </div>
   </footer>
 
+  <button
+    type="button"
+    id="top-button"
+    class="fixed right-4 bottom-5 sm:right-6 sm:bottom-6 z-50 opacity-0 pointer-events-none translate-y-2 bg-gold text-black border border-gold-dark rounded-full px-4 py-2 text-xs font-bold uppercase tracking-wider shadow-lg shadow-black/30 transition-all duration-300 hover:bg-gold-light focus:outline-none focus:ring-2 focus:ring-gold-light focus:ring-offset-2 focus:ring-offset-black"
+    aria-label="回到頁面最上方"
+  >
+    Top
+  </button>
+
 
   <!-- ==================== Interactive Scripts ==================== -->
   <script>
+    function resetInitialScrollPosition() {
+      if (window.location.hash) {
+        history.replaceState(null, document.title, window.location.pathname + window.location.search);
+      }
+
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      requestAnimationFrame(() => window.scrollTo({ top: 0, left: 0, behavior: 'auto' }));
+    }
+
     const servicesData = {
       'ad-management': {
         name: '廣告帳戶代操',
@@ -1619,10 +1638,32 @@
       });
     }
 
+    function initTopButton() {
+      const topButton = document.getElementById('top-button');
+      if (!topButton) return;
+
+      const updateTopButton = () => {
+        const shouldShow = window.scrollY > 300;
+        topButton.classList.toggle('opacity-0', !shouldShow);
+        topButton.classList.toggle('pointer-events-none', !shouldShow);
+        topButton.classList.toggle('translate-y-2', !shouldShow);
+      };
+
+      topButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        history.replaceState(null, document.title, window.location.pathname + window.location.search);
+      });
+
+      updateTopButton();
+      window.addEventListener('scroll', updateTopButton, { passive: true });
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
+      resetInitialScrollPosition();
       switchService('ad-management');
       buildMobileAccordion();
       initContactForm();
+      initTopButton();
       initStatsCounter();
       initScrollReveal();
       initCharts();
