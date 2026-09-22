@@ -176,16 +176,18 @@
 
   <!-- ==================== Header ==================== -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-black-border transition-all duration-300" id="header">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       <!-- Logo -->
-      <a href="#hero" class="flex items-center gap-2 group">
-        <span class="text-2xl font-bold tracking-wider text-white group-hover:text-gold transition-colors duration-200">溫浩東</span>
-        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
-        <span class="text-xs text-gray-dim tracking-widest font-medium uppercase">廣告顧問・策略・操作</span>
+      <a href="#hero" class="flex items-center gap-2 group shrink-0 whitespace-nowrap tracking-normal">
+        <span class="text-xl sm:text-2xl font-bold text-white group-hover:text-gold transition-colors duration-200">溫浩東</span>
+        <span class="h-5 w-px bg-gray-muted shrink-0" aria-hidden="true"></span>
+        <span class="text-sm sm:text-base font-medium text-gold">晨揚企業有限公司</span>
+        <span class="hidden sm:block w-1.5 h-1.5 bg-gold rounded-full shrink-0" aria-hidden="true"></span>
+        <span class="hidden sm:inline text-xs text-gray-dim font-medium">廣告顧問・策略・操作</span>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-8">
+      <nav class="hidden xl:flex items-center gap-4 shrink-0 whitespace-nowrap" aria-label="主要導覽">
         <a href="#stats" class="text-sm font-medium text-gray-light hover:text-gold transition-colors duration-200">核心戰績</a>
         <a href="#cases" class="text-sm font-medium text-gray-light hover:text-gold transition-colors duration-200">過往案例</a>
         <a href="#evidence" class="text-sm font-medium text-gray-light hover:text-gold transition-colors duration-200">數據佐證</a>
@@ -196,7 +198,7 @@
       </nav>
 
       <!-- Hamburger Button -->
-      <button class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 z-50" id="menu-btn" aria-label="Toggle Menu">
+      <button class="xl:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 z-50 shrink-0" id="menu-btn" aria-label="開啟導覽選單">
         <span class="w-6 h-0.5 bg-white transition-all duration-300 origin-center" id="hamburger-1"></span>
         <span class="w-6 h-0.5 bg-white transition-all duration-300" id="hamburger-2"></span>
         <span class="w-6 h-0.5 bg-white transition-all duration-300 origin-center" id="hamburger-3"></span>
