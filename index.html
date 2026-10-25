@@ -167,6 +167,44 @@
       background: #C9A84C;
     }
   </style>
+
+  <style id="article-styles">
+    .article-section{padding:88px 24px;background:#0a0a0a;border-top:1px solid #222;color:#bbb;scroll-margin-top:100px}
+    .article-container{max-width:1088px;margin:auto}
+    .article-eyebrow{display:block;color:#c9a84c;font-size:12px;letter-spacing:.14em;margin:0 0 14px}
+    .article-section h2{font-size:36px;font-weight:700;color:#fff;line-height:1.4;margin:0 0 16px}
+    .article-intro{margin:0 0 36px;line-height:1.8}
+    .article-card{background:linear-gradient(120deg,#1b1914,#111 70%);border:1px solid #756039;border-radius:14px;scroll-margin-top:104px;overflow:hidden}
+    .article-card summary{padding:36px 40px;display:flex;align-items:center;justify-content:space-between;gap:28px;cursor:pointer;list-style:none}
+    .article-card summary::-webkit-details-marker{display:none}
+    .article-card summary:focus-visible,.article-card a:focus-visible,.article-card button:focus-visible{outline:2px solid #e8c97a;outline-offset:-4px}
+    .article-card-copy{display:block;min-width:0}
+    .article-card-title{display:block;color:#fff;font-size:30px;font-weight:700;line-height:1.5}
+    .article-card-subtitle{display:block;font-size:20px;color:#eee;line-height:1.7;margin:5px 0 16px}
+    .article-card-description{display:block;line-height:1.9;max-width:650px;font-size:14px}
+    .article-meta{display:block;font-size:12px;color:#aaa;margin-top:18px}
+    .article-toggle,.article-actions button{border:1px solid #c9a84c;color:#e8c97a;border-radius:5px;padding:12px 20px;font-size:14px;white-space:nowrap;background:transparent}
+    .article-close-label{display:none}.article-card[open] .article-open-label{display:none}.article-card[open] .article-close-label{display:inline}
+    .article-content{padding:0 40px 36px}
+    .article-contents{display:flex;flex-wrap:wrap;gap:12px 28px;border-block:1px solid #54452c;padding:18px 0;margin-bottom:30px}
+    .article-contents a{color:#e8c97a;font-size:14px;text-decoration:none}.article-contents a:hover{text-decoration:underline}
+    .article-prose{max-width:800px;margin:auto;font-size:16px;line-height:2;color:#c7c7c7;overflow-wrap:anywhere}
+    .article-prose h3{font-size:24px;font-weight:700;color:#fff;margin:40px 0 20px;scroll-margin-top:110px;line-height:1.6}
+    .article-prose p{margin:0 0 22px}.article-prose strong{color:#f0e5ce;font-weight:700}
+    .article-prose ul{list-style:disc;padding-left:24px;margin:0 0 24px}.article-prose li{margin:8px 0}
+    .article-prose blockquote{padding:20px 24px;border-left:3px solid #c9a84c;background:#232016;margin:26px 0}
+    .article-prose hr{border:0;border-top:1px solid #3b3427;margin:36px 0}
+    .article-table{margin:24px 0}.article-table table{width:100%;border-collapse:collapse;font-size:14px;table-layout:fixed}
+    .article-table caption{text-align:left;font-size:12px;color:#aaa;margin-bottom:10px}
+    .article-table th,.article-table td{padding:12px 8px;border:1px solid #403828;text-align:left;overflow-wrap:anywhere}
+    .article-table th{color:#e8c97a;background:#211e16;font-weight:500}
+    .article-actions{max-width:800px;margin:36px auto 0;display:flex;flex-wrap:wrap;gap:16px;padding-top:28px;border-top:1px solid #403828}
+    .article-contact{display:inline-flex;gap:36px;align-items:center;padding:13px 24px;background:#c9a84c;color:#0a0a0a;border-radius:5px;font-weight:700;text-decoration:none}
+    .article-actions button{cursor:pointer}.article-actions button:hover,.article-toggle:hover{background:#c9a84c15}
+    @media(max-width:640px){.article-section{padding:56px 16px}.article-section h2{font-size:28px}.article-intro{font-size:14px;margin-bottom:26px}.article-card summary{padding:24px 20px;align-items:flex-start;flex-direction:column;gap:22px}.article-card-title{font-size:23px}.article-card-subtitle{font-size:16px}.article-toggle{align-self:flex-start}.article-content{padding:0 20px 26px}.article-contents{gap:12px 18px}.article-contents a{font-size:13px}.article-prose{font-size:15px;line-height:1.95}.article-prose h3{font-size:21px}.article-table th,.article-table td{padding:10px 4px;font-size:12px}.article-prose blockquote{padding:16px}.article-actions{flex-direction:column}.article-contact{justify-content:center}.article-actions button{min-height:46px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+  </style>
+
 </head>
 <body class="bg-black text-gray-light font-sans antialiased overflow-x-hidden selection:bg-gold selection:text-black">
   <!-- Google Tag Manager (noscript) -->
@@ -979,6 +1017,84 @@
     </div>
   </section>
 
+
+
+  <!-- Advertising cooperation guide: full article is present before interaction -->
+  <section id="insights" aria-labelledby="insights-heading" class="article-section">
+    <div class="article-container">
+      <p class="article-eyebrow">ADVERTISING INSIGHTS</p>
+      <h2 id="insights-heading">廣告合作指南</h2>
+      <p class="article-intro">從實務經驗出發，釐清廣告合作前值得先想清楚的事。</p>
+      <details id="ad-pricing-article" class="article-card">
+        <summary>
+          <span class="article-card-copy">
+            <span class="article-eyebrow">廣告代操・費用評估</span>
+            <span class="article-card-title">廣告代操費用怎麼算？</span>
+            <span class="article-card-subtitle">報價之外，更該確認的三件事</span>
+            <span class="article-card-description">比較報價前，先釐清服務範圍、投入與回報，以及目前是否適合外包。</span>
+            <span class="article-meta">溫浩東 <span aria-hidden="true">｜</span> <time datetime="2026-10-25">2026.10.25</time></span>
+          </span>
+          <span class="article-toggle"><span class="article-open-label">展開閱讀 ＋</span><span class="article-close-label">收合文章 −</span></span>
+        </summary>
+        <article aria-label="廣告代操費用怎麼算？報價之外，更該確認的三件事" class="article-content">
+          <nav class="article-contents" aria-label="文章目錄">
+            <a href="#article-scope">報價範圍</a><a href="#article-return">投入與回報</a><a href="#article-readiness">外包評估</a>
+          </nav>
+          <div class="article-prose"><p>多數業主第一次接觸時的第一個問題都是「廣告代操費用怎麼算？」</p>
+<p>這個問題的答案其實很多。同樣的服務範圍，報價可以差三倍；而便宜的那個不一定划算，通常只是代表你的帳戶會被分給比較資淺的人，或者對方手上同時有十幾個帳戶。</p>
+<p>收費結構本身（月費、抽成、混合）各有適用情境，也各有誘因上的差異。但在比較報價之前，有三件事比數字更值得先確認。</p>
+<h3 id="article-scope">一、報價裡通常不含什麼</h3>
+<p><strong>1. 素材製作。</strong> 大部分代操報價不含素材。對方負責策略、受眾、預算、優化，素材由你提供。</p>
+<p>但素材是成效影響最大的單一變因——同樣的受眾和預算，換一支素材 ROAS 可以差一倍。如果品牌三個月才產出兩支新素材，再厲害的操作也救不了。這件事如果沒在一開始講清楚，後面會變成雙方互相指責的來源。</p>
+<p><strong>2. 落地頁優化。</strong> 廣告把人帶進來之後的事，通常不在服務範圍內。但轉換率低的網站會讓所有廣告數字都難看，而且從廣告數據上不容易分辨問題出在流量品質還是網站本身。</p>
+<p><strong>3. 工具與報表費用。</strong> 有些另外收，有些包含在內。通常金額不大，但事後發現需要加購才是讓人不舒服的點。</p>
+<p>這三項不是問題，各自有合理的理由不包含在報價裡。問題是如果沒先確認，你以為有的和實際拿到的會有落差。</p>
+<h3 id="article-return">二、怎麼看投入與回報的關係</h3>
+<p>比起問「這個報價貴不貴」，比較實際的角度是這筆投入有沒有換回更多營收，讓多出來的廣告收益超過支出的服務費。</p>
+<p>假設月投一百萬廣告費，服務費十萬：</p>
+<ul><li>原本 ROAS 3.0，廣告收益三百萬</li><li>外包後 ROAS 3.1，廣告收益三百一十萬——多出來的十萬剛好等於服務費，打平</li><li>外包後 ROAS 3.5，廣告收益三百五十萬——多出五十萬，扣掉服務費還多四十萬</li></ul>
+<p>但這不是一個能精算的數字，我也不建議把它當成承諾來要求。廣告成效同時受產品力、定價、網站體驗、季節性、競爭對手動作影響，操作只是其中一個變數，而且不一定是最大的那個。同一套操作方法放在不同品牌上，結果可以差很遠。</p>
+<p>改善的幅度差距也很大。一個結構已經乾淨、素材充足的帳戶，能再擠出來的空間本來就有限；而一個長期沒整理、預算分配混亂的帳戶，調整後的變化幅度會明顯得多。所以「能提升多少」這個問題，在還沒看過帳戶之前，任何具體數字都只是猜測。</p>
+<p>這個換算的用處不在於算出答案，而在於讓你跳脫對報價數字的直覺反應，改成評估投入與可能回報的相對關係。</p>
+<p>還有一個容易被忽略的陷阱：ROAS 變好，不代表你賺更多。</p>
+<p>如果對方把 ROAS 從 3.0 拉到 4.0，數字看起來很漂亮，但如果同時把預算從一百萬砍到五十萬，廣告收益會從三百萬掉到兩百萬。效率進步了，實際進帳少了一百萬。</p>
+<p>這種情況不一定是壞事——有時候收縮是為了重整結構，之後再放大。但如果只看 ROAS 不看絕對金額，會誤判發生了什麼事。</p>
+<p>所以評估的時候兩個數字要一起看：ROAS 代表效率，廣告收益總額代表規模，兩者都要往對的方向走，這筆投入才真的有產生正面影響。</p>
+<h3 id="article-readiness">三、什麼情況下外包不會解決問題</h3>
+<p>有幾種狀況，或許比找代操有更迫切需要調整的內容。</p>
+<p><strong>1. 月預算規模太小。</strong> Meta 的廣告組合有「學習期」機制：系統需要累積足夠的轉換資料才能穩定投放，官方建議的參考值是每個廣告組合每週約 50 次轉換。達不到這個量，組合會一直停在學習階段，成效波動大，而且優化沒有足夠的依據——再有經驗的操作者，在數據量不足的情況下也只能用猜的。這種情況比較合理的做法是找單次諮詢或帳戶健診，把方向確認清楚之後自己跑。</p>
+<p>每週 50 次，一個月大約需要 200 次轉換。換算成預算就是：</p>
+<blockquote><strong>單一廣告組合的月最低預算 ＝（客單價 ÷ 目標 ROAS）× 200</strong></blockquote>
+<p>括號裡算出來的是你的目標 CPA，也就是每取得一筆訂單可以花多少廣告費。</p>
+<p>幾個實際的例子：</p>
+<div class="article-table"><table><caption>單一廣告組合預算試算（原文範例）</caption><thead><tr><th scope="col">客單價</th><th scope="col">目標 ROAS</th><th scope="col">目標 CPA</th><th scope="col">單組月預算門檻</th></tr></thead><tbody><tr><td>800</td><td>4</td><td>200</td><td>4 萬</td></tr><tr><td>1,500</td><td>3</td><td>500</td><td>10 萬</td></tr><tr><td>3,000</td><td>3</td><td>1,000</td><td>20 萬</td></tr></tbody></table></div>
+<p>這是一個廣告組合的門檻。實務上一個帳戶至少需要兩到三組才有操作空間，所以實際的建議預算可能會比表格數字更高。</p>
+<p><strong>2. 產品或網站本身有問題。</strong> 如果轉換率低是因為價格沒有競爭力、網站難用、或商品不符合市場需求，廣告不會解決這些問題，只會讓你更快、而且更貴地驗證它們。</p>
+<p><strong>3. 完全沒有素材產能。</strong> 前面提過，這是影響最大的變因。如果品牌內部無法持續產出素材，也沒有預算外包製作，那先解決這件事會比找代操更有效。</p>
+<hr>
+<p>這三件事講清楚之後，報價數字反而變得好判斷——因為你知道自己在比較什麼。</p>
+<p>而對操作方來說，願意在合作前就說明哪些狀況不適合外包，通常也代表他有能力判斷什麼帳戶自己接得起來。這件事對雙方都好。</p>
+<p>文章裡提到的幾個狀況，素材產能不足、落地頁轉換差、數據看不懂，都不是廣告操作本身能解決的，但不代表沒有解法。這些環節我大多有實際處理過的經驗，也累積了可以配合的資源，不一定都由我自己執行，但至少知道問題在哪、該往哪個方向調整、可以找什麼樣的人幫忙解決。</p>
+<p>如果你照公式算完發現數字對不上，或是不確定自己的帳戶卡在哪一環，歡迎先聊聊，把問題定位清楚，後面怎麼做通常就非常快速且明朗了。</p></div>
+          <div class="article-actions">
+            <a class="article-contact" href="#contact">討論我的廣告需求 <span aria-hidden="true">→</span></a>
+            <button type="button" data-close-article hidden>收合文章 −</button>
+          </div>
+        </article>
+      </details>
+    </div>
+  </section>
+  <script>
+    (() => {
+      const article = document.getElementById('ad-pricing-article');
+      article.querySelector('[data-close-article]').hidden = false;
+      article.querySelector('[data-close-article]').addEventListener('click', () => {
+        article.open = false;
+        article.querySelector('summary').focus({ preventScroll: true });
+        article.scrollIntoView({ block: 'start', behavior: 'instant' });
+      });
+    })();
+  </script>
 
   <!-- ==================== Contact Section ==================== -->
   <section id="contact" class="py-20 md:py-28 bg-black-soft border-t border-black-border relative reveal">
