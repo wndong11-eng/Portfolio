@@ -6,6 +6,9 @@ from html.parser import HTMLParser
 
 page = Path('index.html').read_text(encoding='utf-8')
 original = subprocess.check_output(['git','show','main:index.html']).decode('utf-8').replace('\r\n','\n')
+for label in ['SUCCESS STORIES','DATA EVIDENCE','CAREER JOURNEY','SKILLS & TOOLS','WHAT I DO','GET IN TOUCH']:
+    original=re.sub(r'^ *<span class="section-subtitle">'+re.escape(label)+r'</span>\n', '', original, flags=re.M)
+assert all(label not in page for label in ['SUCCESS STORIES','DATA EVIDENCE','CAREER JOURNEY','SKILLS & TOOLS','WHAT I DO','GET IN TOUCH','ADVERTISING INSIGHTS'])
 clean = re.sub(r'\n  <style id="article-styles">.*?</style>\n\n', '', page, flags=re.S)
 clean = re.sub(r'\n  <!-- Advertising cooperation guide:.*?(?=  <!-- ==================== Contact Section)', '', clean, flags=re.S)
 assert clean.strip() == original.strip(), 'Existing page changed outside article additions'

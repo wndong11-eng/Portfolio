@@ -46,7 +46,6 @@ section = '''
   <!-- Advertising cooperation guide: full article is present before interaction -->
   <section id="insights" aria-labelledby="insights-heading" class="article-section">
     <div class="article-container">
-      <p class="article-eyebrow">ADVERTISING INSIGHTS</p>
       <h2 id="insights-heading">廣告合作指南</h2>
       <p class="article-intro">從實務經驗出發，釐清廣告合作前值得先想清楚的事。</p>
       <details id="ad-pricing-article" class="article-card">
