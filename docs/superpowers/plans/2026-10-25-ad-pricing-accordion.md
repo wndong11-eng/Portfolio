@@ -10,5 +10,4 @@ Constraints: Preserve supplied article copy verbatim. No main updates, no deploy
 - [x] Add browser tests for collapsed initial state, keyboard expand, complete article visibility, same-page anchors, bottom close, mobile width, and no-JavaScript reading; run before implementation to see missing feature failure.
 - [x] Copy original article into articles/ad-agency-pricing.md; convert trusted Markdown to escaped semantic static HTML; insert native details article and scoped CSS before contact.
 - [x] Run desktop/mobile/JavaScript-disabled tests, capture screenshots and review; verify original content and unrelated sections preserved.
-- [ ] Commit feature branch, independently review diff, push and open draft PR. Confirm main still matches backup. Await user confirmation before merging.
-
+- [x] Commit feature branch, independently review diff, push and open draft PR. Confirm main still matches backup. User approved merging on 2026-10-26.
