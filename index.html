@@ -85,7 +85,9 @@
     @container (min-width: 380px) { #contact .section-title { font-size: 24px; } }
     @container (min-width: 420px) { #contact .section-title { font-size: 26px; } }
     @container (min-width: 600px) { #contact .section-title { font-size: 30px; } }
+    .line-contact-row { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
     .line-contact-card { width: 320px; max-width: 100%; }
+    .line-contact-hint { margin: 0; font-size: 14px; line-height: 1.8; color: #BBBBBB; }
     .line-qr-link { display: block; background: #fff; padding: 12px; border-radius: 4px; aspect-ratio: 1; transition: box-shadow .2s; }
     .line-qr-link:hover, .line-qr-link:focus-visible { outline: 2px solid #C9A84C; outline-offset: 4px; }
     .line-qr-link img { display: block; width: 100%; height: auto; aspect-ratio: 1; }
@@ -1131,10 +1133,13 @@
                 <a href="https://line.me/ti/p/nrLWB4DkZo" target="_blank" rel="noopener noreferrer" class="text-sm text-white hover:text-gold transition-colors font-medium">LINE ID: nick_wn</a>
               </div>
             </div>
-            <div class="line-contact-card">
-              <a class="line-qr-link" href="https://line.me/ti/p/nrLWB4DkZo" target="_blank" rel="noopener noreferrer" aria-label="加入 LINE 好友（另開視窗）">
-                <img src="assets/line-qr.jpg" width="900" height="900" alt="溫浩東 LINE 好友 QR Code" />
-              </a>
+            <div class="line-contact-row">
+              <p class="line-contact-hint">點擊圖片即可加入好友</p>
+              <div class="line-contact-card">
+                <a class="line-qr-link" href="https://line.me/ti/p/nrLWB4DkZo" target="_blank" rel="noopener noreferrer" aria-label="加入 LINE 好友（另開視窗）">
+                  <img src="assets/line-qr.jpg" width="900" height="900" alt="溫浩東 LINE 好友 QR Code" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
